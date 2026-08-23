@@ -14,7 +14,7 @@ int main()
             std::cout << "It is February" << '\n';
             break;
         case 3:
-            std::cout << "It is    March" << '\n';
+            std::cout << "It is March" << '\n';
             break;
         case 4:
             std::cout << "It is April" << '\n';
@@ -47,9 +47,9 @@ int main()
             std::cout << "Invalid month number" << '\n';
     }
 
-    char d;
-    std::cout << "Press any key to exit..." << '\n';
-    std::cin >> d;
+    std::cout << "Press Enter to exit..." << '\n';
+    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+    std::cin.get();
 
     return 0;
 }
